@@ -12,7 +12,7 @@ class Post(models.Model):
     
 
     def publish(self):
-        self.publihed_date = timezeone.now()
+        self.publihed_date = timezone.now()
         self.save()
 
     def __str__(self):
